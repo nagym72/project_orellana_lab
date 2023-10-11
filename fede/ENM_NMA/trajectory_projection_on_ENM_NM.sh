@@ -118,7 +118,7 @@ bash plot_NM_space.sh $NM1 $NM2
 
 # remove temporary files
 rm ./{write_CA,add_chain_label_ali,MD_proj_NM,ENM_NMA,plot_NM_space.sh,5lox.pdb,\
-5lox_A_CA.pdb,aligned_MD_simulation.pdb,NMs.txt,NM_frequencies_GHz.txt,$traj_name}
+5lox_A_CA.pdb,aligned_MD_simulation.pdb,$traj_name}
 
 # move working directory to its final destination
 mv $workdir $outdir/

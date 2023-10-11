@@ -1,4 +1,4 @@
-# Elastic Network Model + Normal Modes Analaysis
+# Elastic Network Model + Normal Modes Trajectory Projection
 
 A bunch of scripts from Domenico which was partly generalized by me (Fede). 
 The whole package is launched from the .sh script in this directory.
@@ -18,4 +18,9 @@ NMs, frequencies, projection of trajectory on normal modes
 
 ## Manual
 The whole package is launched from the .sh script in this directory, like this:
-`bash trajectory_projection_on_ENM_NM.sh trajectory.pdb nameofchoice`
+`bash trajectory_projection_on_ENM_NM.sh trajectory.pdb outputname`
+
+## Warnings:
+- Fortran scripts in the packages must be re-compiled
+- Executables only work with all input files in the same folder, but the file management is done upstream by trajectory_projection_on_ENM_NM.sh
+- Fortran executables only accept four-digit names for input structure pdbs, without extensions (e.g. 5lox). 
